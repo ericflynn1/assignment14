@@ -1,0 +1,26 @@
+{
+  "name": "assignment14",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericflynn1/assignment14.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericflynn1/assignment14/issues"
+  },
+  "homepage": "https://github.com/ericflynn1/assignment14#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-html-lint": "0.0.1"
+  },
+  "devDependencies": {
+    "gulp-sass": "^2.3.2"
+  }
+}
