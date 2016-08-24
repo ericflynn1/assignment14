@@ -2,12 +2,15 @@
 
 let gulp = require('gulp');
 let sass = require('gulp-sass');
-let 
+let lint = require('gulp-html-lint');
 
 gulp.task('default', ['html', 'css', 'js']);
-gulp.task('html', function (){
+gulp.task('html', function() {
     return gulp.src('index.html')
-    .pipe(gulp.dest('public/'));
+        .pipe(htmlLint())
+        .pipe(htmlLint.format())
+        .pipe(htmlLint.failOnError())
+        .pipe(gulp.dest('public/'));
 });
 gulp.task('css', function (){
     return gulp.src('style.scss')
